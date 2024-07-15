@@ -1,0 +1,4 @@
+[sqlite_database.default]
+type = "libsql"
+url = "http://127.0.0.1:8080"
+token = "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjEwNzQ5NDgsImlkIjoiMDFhYTEwNWQtZDI2NC0xMWVlLWEyYzktMDI0NWEzMGFkNDYwIn0.za7rYRhOcJ6wq9sQ_bNqDp06pdCfAieG7ykcQDaKBhXNo_e_ev3HlIqF-4Ci4jsIDTof7mN2rzts_Ft15lxXDw"

@@ -1,0 +1,19 @@
+spin_manifest_version = 2
+
+[application]
+name = "m-shortener"
+version = "0.1.0"
+authors = ["Adam Sobotka <vorcigernix@gmail.com>"]
+description = "Meiro Shortener"
+
+[[trigger.http]]
+route = "/..."
+component = "m-shortener"
+
+[component.m-shortener]
+source = "target/wasm32-wasi/release/m_shortener.wasm"
+allowed_outbound_hosts = []
+sqlite_databases = ["default"]
+[component.m-shortener.build]
+command = "cargo build --target wasm32-wasi --release"
+watch = ["src/**/*.rs", "Cargo.toml"]
